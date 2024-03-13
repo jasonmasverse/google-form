@@ -20,8 +20,8 @@ export default function Home() {
     const inviteSelection = () => {
         return (
             <>
-                <div className="flex flex-col w-full justify-around">
-                    <div className="flex justify-around">
+                <div className="flex flex-col w-full">
+                    <div className="flex justify-around gap-4">
                     {InviteType.map((user, index) => (
                         <span key={index} 
                         className={`flex justify-center items-center px-2 py-2 sm:px-4 sm:py-2 text-sm md:text-md rounded-2xl text-center md:rounded-full ${Invite === user ? 'bg-purple-500 text-white' : 'text-gray-700'} bg-gray-400 active:bg-blue-500`}
