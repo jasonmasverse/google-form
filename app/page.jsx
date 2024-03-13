@@ -24,7 +24,7 @@ export default function Home() {
                     <div className="flex justify-around">
                     {InviteType.map((user, index) => (
                         <span key={index} 
-                        className={`flex justify-center items-center px-4 py-2 rounded-full ${Invite === user ? 'bg-purple-500 text-white' : 'text-gray-700'} bg-gray-400 active:bg-blue-500`}
+                        className={`flex justify-center items-center px-2 py-2 sm:px-4 sm:py-2 text-sm md:text-md rounded-2xl text-center md:rounded-full ${Invite === user ? 'bg-purple-500 text-white' : 'text-gray-700'} bg-gray-400 active:bg-blue-500`}
                         onClick={() => setInvite(user)}>
                             <p>{user}</p>
                         </span>
@@ -49,7 +49,7 @@ export default function Home() {
                 <div className="flex w-full justify-around gap-4">
                     {UserType.map((user, index) => (
                         <span key={index} 
-                        className={`flex justify-center items-center px-4 py-2 rounded-full ${User === user ? 'bg-purple-500 text-white' : 'text-gray-700'} bg-gray-400 active:bg-blue-500`}
+                        className={`flex justify-center items-center px-2 py-2 sm:px-4 sm:py-2 text-sm md:text-md rounded-2xl text-center md:rounded-full ${User === user ? 'bg-purple-500 text-white' : 'text-gray-700'} bg-gray-400 active:bg-blue-500`}
                         onClick={() => setUser(user)}>
                             <p>{user}</p>
                         </span>
@@ -62,16 +62,15 @@ export default function Home() {
     return (
         <>
             <div className="w-full h-screen flex flex-col justify-center items-center">
-                <div className="absolute top-0 left-0 w-full h-full bg-[url('https://wallpaperswide.com/download/purple_abstract_design-wallpaper-1440x900.jpg')] bg-no-repeat bg-cover bg-center blur-sm mix-blend-luminosity"></div>
-                <div className="bg-white/60 backdrop-blur-lg py-10 px-10 rounded-3xl m-20 flex flex-col items-center relative">
-                    <div className='text-center w-full text-[25px] lg:text-[35px] font-bold text-gray-700 drop-shadow-lg mt-4'>IEO Appointment Registration</div>
+                <div className="bg-white/60 backdrop-blur-lg py-3 md:py-7 px-10 rounded-3xl mx-20 flex flex-col items-center relative">
+                    <div className='text-center w-full text-[25px] lg:text-[35px] font-bold text-gray-700 drop-shadow-lg'>IEO Appointment Registration</div>
                     <form action="https://docs.google.com/forms/d/e/1FAIpQLSf9dAdEhr8kmFfiIrPKG1-BTXifScjF-K7Bby_92BOcg6H0JA/formResponse" className="mt-3 flex w-full justify-center">
                         <div className="flex flex-col justify-center gap-3">
                             <label htmlFor="Email" className="font-semibold text-gray-700 flex flex-col">&ensp;Email
                                 <input type="text" name="entry.1979513377" placeholder="Enter Email" className="bg-gray-200 border-[1.5px] border-gray-300 p-2 rounded-xl mt-1 outline-none" required />
                             </label>
 
-                            <label htmlFor="name" className="font-semibold text-gray-700 flex flex-col">I Am
+                            <label htmlFor="name" className="font-semibold text-gray-700 flex flex-col">&ensp;You are a
                             {userSelection()}
                             <input type="hidden" name="entry.301415720" value={User} />
                             </label>
