@@ -71,7 +71,7 @@ export default function Home() {
                                 <input type="text" name="entry.1979513377" placeholder="Enter Email" className="bg-gray-200 border-[1.5px] border-gray-300 p-2 rounded-xl mt-1 outline-none" required />
                             </label>
 
-                            <label htmlFor="name" className="font-semibold text-gray-700 flex flex-col">Iam
+                            <label htmlFor="name" className="font-semibold text-gray-700 flex flex-col">I Am
                             {userSelection()}
                             <input type="hidden" name="entry.301415720" value={User} />
                             </label>
