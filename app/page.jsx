@@ -86,7 +86,7 @@ export default function Home() {
 
                             <label htmlFor="email" className="font-semibold text-gray-700 flex flex-col">&ensp;Available Date
                                 <input type="date" name="entry.834808789" placeholder="" className="bg-gray-200 border-[1.5px] border-gray-300 p-2 rounded-xl mt-1 outline-none" required />
-                                <input type="time" name="entry.834808789" placeholder="" className="bg-gray-200 border-[1.5px] border-gray-300 p-2 rounded-xl mt-1 outline-none" required />
+                                {/* <input type="time" name="entry.834808789" placeholder="" className="bg-gray-200 border-[1.5px] border-gray-300 p-2 rounded-xl mt-1 outline-none" required /> */}
                             </label>
 
                             <label htmlFor="name" className="font-semibold text-gray-700 flex flex-col">&ensp;Individual/Company
@@ -97,7 +97,7 @@ export default function Home() {
                                 {inviteSelection()}
                             </label>
 
-                            <button type="submit" className="mt-4 bg-blue-700 text-white font-bold py-3 px-8 rounded-full drop-shadow-2xl shadow-lg">Claim</button>
+                            <button type="submit" className="mt-4 bg-blue-700 text-white font-bold py-3 px-8 rounded-full drop-shadow-2xl shadow-lg">Submit</button>
                         </div>
                     </form>
                 </div>
