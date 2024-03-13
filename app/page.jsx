@@ -61,7 +61,7 @@ export default function Home() {
     }
     return (
         <>
-            <div className="w-full h-screen flex flex-col justify-center items-center">
+            <div className="w-full h-[115vh] flex flex-col justify-center items-center">
                 <div className="bg-white/60 backdrop-blur-lg py-3 md:py-7 px-10 rounded-3xl mx-20 flex flex-col items-center relative">
                     <div className='text-center w-full text-[25px] lg:text-[35px] font-bold text-gray-700 drop-shadow-lg'>IEO Appointment Registration</div>
                     <form action="https://docs.google.com/forms/d/e/1FAIpQLSf9dAdEhr8kmFfiIrPKG1-BTXifScjF-K7Bby_92BOcg6H0JA/formResponse" className="mt-3 flex w-full justify-center">
